@@ -12,6 +12,7 @@
 # misc
 yarn.lock
 package-lock.json
+.idea
 .storybook
 .DS_Store
 .env.local
