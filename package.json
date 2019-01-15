@@ -5,17 +5,20 @@
   "dependencies": {
     "@emotion/core": "^10.0.6",
     "@types/react-redux": "^6.0.12",
+    "@types/underscore": "^1.8.9",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "react-scripts-ts": "3.1.0",
-    "source-map-explorer": "^1.6.0"
+    "source-map-explorer": "^1.6.0",
+    "underscore": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom --watchAll=false",
+    "test + coverage": "react-scripts-ts test --env=jsdom --watchAll=false --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "analyze": "source-map-explorer build/static/js/main.*",
