@@ -13,14 +13,14 @@
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "test jsdom": "react-scripts-ts test --env=jsdom",
+    "test": "react-scripts-ts test --env=jsdom --watchAll=false",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "analyze": "source-map-explorer build/static/js/main.*",
     "start with HTTPS": "set HTTPS=true&&npm start",
     "test:debug": "react-scripts --inspect-brk test --runInBand"
   },
-  "jest": {
+  "jest_": {
     "verbose": false,
     "reporters": [
       "jest-dot-reporter"
