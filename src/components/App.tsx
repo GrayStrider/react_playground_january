@@ -3,7 +3,7 @@ import '../styles/App.css';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // TODO React router
 
-import logo from './logo.svg';
+import logo from '../logo.svg';
 
 // const element = <h1>Hello, world</h1>;
 
