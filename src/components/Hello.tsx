@@ -1,3 +1,5 @@
+import {DatePicker} from 'antd';
+import 'antd/dist/antd.css'
 import * as React from "react";
 import * as _ from "underscore";
 import '../styles/Hello.css';
@@ -24,6 +26,9 @@ function Hello({name, enthusiasmLevel = 1, onIncrement, onDecrement}: Props) {
             </div>
             <div>
                 <p>{_.range(1, 11, 1)}</p>
+            </div>
+            <div>
+                <DatePicker/>
             </div>
         </div>
     );

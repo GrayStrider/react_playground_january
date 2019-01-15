@@ -6,6 +6,7 @@
     "@emotion/core": "^10.0.6",
     "@types/react-redux": "^6.0.12",
     "@types/underscore": "^1.8.9",
+    "antd": "^3.12.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
