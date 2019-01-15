@@ -13,24 +13,35 @@
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
+    "test jsdom": "react-scripts-ts test --env=jsdom",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "analyze": "source-map-explorer build/static/js/main.*",
     "start with HTTPS": "set HTTPS=true&&npm start",
     "test:debug": "react-scripts --inspect-brk test --runInBand"
   },
+  "jest": {
+    "verbose": false,
+    "reporters": [
+      "jest-dot-reporter"
+    ]
+  },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@storybook/addon-actions": "^4.1.6",
+    "@storybook/addon-links": "^4.1.6",
+    "@storybook/addons": "^4.1.6",
+    "@storybook/react": "^4.1.6",
+    "@types/enzyme": "^3.1.15",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/jest": "^23.3.12",
     "@types/node": "^10.12.18",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
-    "typescript": "^3.2.2",
-    "@storybook/react": "^4.1.6",
-    "@storybook/addon-actions": "^4.1.6",
-    "@storybook/addon-links": "^4.1.6",
-    "@storybook/addons": "^4.1.6",
-    "@babel/core": "^7.2.2",
-    "babel-loader": "^8.0.5"
+    "babel-loader": "^8.0.5",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "react-test-renderer": "^16.7.0",
+    "typescript": "^3.2.2"
   }
 }

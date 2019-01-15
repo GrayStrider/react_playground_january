@@ -1,9 +1,11 @@
 import * as React from 'react';
-import './App.css';
+import './styles/App.css';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // TODO React router
 
 import logo from './logo.svg';
+
+// const element = <h1>Hello, world</h1>;
 
 class App extends React.Component {
   public render() {
