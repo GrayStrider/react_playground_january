@@ -3,6 +3,7 @@ import '../styles/App.css';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // TODO React router
 
+import {Link} from "react-router-dom";
 import logo from '../logo.svg';
 
 // const element = <h1>Hello, world</h1>;
@@ -18,6 +19,9 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to <b>reload</b>.
         </p>
+          <p>
+              <Link to={'/'}>Home</Link>
+          </p>
       </div>
     );
   }

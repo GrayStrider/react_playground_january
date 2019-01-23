@@ -1,16 +1,18 @@
 import {DatePicker} from 'antd';
 import 'antd/dist/antd.css'
 import * as React from "react";
+import {Link} from "react-router-dom";
 import * as _ from "underscore";
 import '../styles/Hello.css';
-export interface Props {
+
+export interface IProps {
     name: string;
     enthusiasmLevel?: number;
     onIncrement?: () => void;
     onDecrement?: () => void;
 }
 
-function Hello({name, enthusiasmLevel = 1, onIncrement, onDecrement}: Props) {
+function Hello({name, enthusiasmLevel = 1, onIncrement, onDecrement}: IProps) {
     if (enthusiasmLevel <= 0) {
         throw new Error('You could be a little more enthusiastic. :D');
     }
@@ -30,6 +32,12 @@ function Hello({name, enthusiasmLevel = 1, onIncrement, onDecrement}: Props) {
             <div>
                 <DatePicker/>
             </div>
+            <p>
+                <Link to={'/app'}>App</Link>
+            </p>
+            <p>
+                <Link to={'/error'}>404</Link>
+            </p>
         </div>
     );
 }

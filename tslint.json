@@ -1,7 +1,13 @@
 {
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "rules": {
-    "interface-name": false
+    "interface-name": true,
+    "no-console": false,
+    "max-classes-per-file": [
+      true,
+      2
+    ],
+    "no-string-literal": true
   },
   "linterOptions": {
     "exclude": [
